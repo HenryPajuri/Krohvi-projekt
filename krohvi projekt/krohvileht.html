@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Karl bilderi krohvitoonimise leht</h1>
+
+<body>
+
+    <label for="tone_name">Sisesta tooni nimetus: </label>
+    <input type="text" id="tone_name" name="Krohvi nimetus" placeholder="Tooni nimi...">
+    <!---<label for="product_type">Vali toode: </label>--->
+    <select id="product_type" name="product_type">
+        <option value="7415">CT 74 1.5mm</option>
+        <option value="7420">CT 74 2.0mm</option>
+        <option value="17415">CT 174 1.5mm</option>
+        <option value="17420">CT 174 2.0mm</option>
+        <option value="17515">CT 175 1.5mm</option>
+        <option value="17520">CT 175 2.0mm</option>
+        <option value="4815">CT 48 15L</option>
+        <option value="4835">CT 48 3.5L</option>
+    </select>
+    <select id="transparency" name="transparency">
+        <option value="White">Valge</option>
+        <option value="Transparent">Transparent</option>
+    </select>
+    <input type="number" name="ammount" id="ammount" placeholder="Kogus...">
+    <br><br>
+    <label for="appt">Vali toonimise kellaaeg:</label>
+    <input type="time" id="appt" name="appt" min="07:30" max="17:00" required>
+    <input type="date" id="today">
+    <hr>
+    <label for="user">Vali sisestaja: </label>
+    <select id="user" name="user">
+        <option value="Rein">Reindear</option>
+        <option value="Toomas">Toomas Kuusk</option>
+        <option value="Tonis">Tõnis Kadarik</option>
+    </select>
+    <label for="Firm_name">Sisesta firma nimetus: </label>
+    <input type="text" id="Firm_name" name="Firm_name" placeholder="Firma nimi" onfocus="this.value=''"><br><br>
+    <label id="comment" for="comment" placeholder="Kommentaar..." onfocus="this.value=''">Sisesta tellimusele kommentaar: </label>
+    <textarea name="" id="comment" cols="30" rows="3"></textarea>
+    <hr>
+    <input type="text" id="searchInput" placeholder="Otsi tellimust..." title="Sisesta otsitav ülesanne">
+    <hr>
+    <input type="button" id="send_button" value="Saada!">
+    <br><br>
+    <div id="database">
+        <a href="database.php">Vaata ajalugu</a>
+    </div>
+    <div class="small-container">
+        <h1>New Tab App</h1>
+        <form>
+            <input id="item" type="text" placeholder="New" required />
+        </form>
+
+        <h2>Items</h2>
+        <ul></ul>
+
+        <button>Clear All</button>
+        <!-- more will go here -->
+    </div>
+
+
+</body>
+
+</html>
